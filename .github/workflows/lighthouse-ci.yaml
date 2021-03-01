@@ -9,8 +9,9 @@ jobs:
       - run: npm install && npm install -g @lhci/cli@0.7.x serve
       - run: npm run build
       - run: lhci autorun
-      - name: Archive lighthouse report
-        uses: actions/upload-artifact@v2
-        with:
-          name: lighthouse-report
-          path: .lighthouseci/*.html
+      - uses: treosh/lighthouse-ci-action@v2
+          with:
+            uploadArtifacts: true
+            temporaryPublicStorage: true
+            runs: 1
+            configPath: '.lighthouserc.json'
