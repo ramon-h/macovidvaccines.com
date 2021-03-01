@@ -11,8 +11,8 @@ jobs:
       - run: lhci autorun
       - name: Run Lighthouse
         uses: treosh/lighthouse-ci-action@v2
-          with:
-            uploadArtifacts: true
-            temporaryPublicStorage: true
-            runs: 1
-            configPath: '.lighthouserc.json'
+        with:
+          uploadArtifacts: true
+          temporaryPublicStorage: true
+          runs: 1
+          configPath: '.lighthouserc.json'
