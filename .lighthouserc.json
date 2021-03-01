@@ -9,7 +9,8 @@
       "assertions": {
         "uses-text-compression": "off",
         "unused-javascript": "off"
-      }
+      },
+      "level": "warn"
     },
     "upload": {
       "target": "temporary-public-storage"
