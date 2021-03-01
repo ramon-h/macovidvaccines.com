@@ -1,11 +1,7 @@
 {
     "ci": {
         "collect": {
-            "numberOfRuns": 1,
-            "url": [
-              "http://127.0.0.1:4000"
-            ],
-            "startServerCommand": "npm run build && serve ./build -l 4000"
+            "numberOfRuns": 1
         },
         "upload": {
             "target": "temporary-public-storage"
