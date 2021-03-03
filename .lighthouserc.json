@@ -6,6 +6,10 @@
     },
     "assert" :{
       "preset": "lighthouse:no-pwa",
+      "assertions": {
+        "uses-text-compression": "off",
+        "unused-javascript": "off"
+      },
       "level": "warn"
     },
     "upload": {
